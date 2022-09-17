@@ -1,0 +1,328 @@
+body {
+background: #f8ecea;
+box-sizing: border-box;
+display: flex;
+position: fixed;
+overflow: auto;
+width: 100%;
+height: 100%;
+background-image: url('img/background.jpg');
+background-repeat: no-repeat;
+background-size: 100% ;
+}
+.main-container {
+  display: flex;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  align-items: stretch;
+  box-shadow: 0px 30px 37px -10px #D7A696;
+  background-color: white;
+}
+.navigation {
+  position: absolute;
+  margin: auto;
+  width: auto;
+  height: auto;
+  padding-top: 10px;
+  padding-left: 5px;
+  grid-row-gap: 20px;
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  }
+.back-item-menu {
+  display: none;
+}
+.arrow-back-menu {
+  display: block;
+  height: 25px;
+  width: 40px;
+  background-image: url('img/arrow-back.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20px;
+  margin-right:
+}
+ul {
+  padding-left: 3px;
+}
+li {
+  list-style-type: none;
+  padding-top: 10px;
+}
+a {
+  outline: none;
+  text-decoration: none;
+  color: black;
+}
+ul>li>a:hover {
+  font-weight: bold;
+}
+.left-image {
+display: none;
+
+}
+.right-side {
+  background: white;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 100%;
+  margin-left: 110px;
+}
+.block-in-center {
+width: 95%;
+height: auto;
+margin-top: 30px;
+margin-bottom: auto;
+padding-left: 10px;
+margin-right: auto;
+border-left: 1px solid black;
+}
+
+H1 {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 40px;
+  font-weight: normal;
+  padding: 0px;
+}
+H1::after {
+  content: '\2014';
+}
+H2 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 14px;
+    padding: 5px 0px;
+    font-weight: normal;
+}
+H2>span {
+  font-weight: bold;
+}
+.wrapper-for-preview-and-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: stretch;
+  width: auto;
+  height: auto;
+}
+
+.wrapper-for-preview {
+  width: 80%;
+  height: 150px;
+  background-image: url('img/preview.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: auto;
+}
+.background-for-button {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  opacity: 0.6;
+  border-radius: 50%;
+}
+.play-button, .background-for-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 50px;
+  width: 50px;
+  transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.wrapper-all-photos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.all-photos {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+.arrow-forward {
+  height: 10px;
+  width: 15px;
+  background-image: url('img/arrow-forward.svg');
+  background-position: center center;
+}
+article {
+  width: 90%;
+  flex-wrap: wrap;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+
+}
+nav>a:hover {
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+
+body {
+background: #f8ecea;
+box-sizing: border-box;
+display: flex;
+position: fixed;
+overflow: auto;
+width: 100%;
+height: 100%;
+}
+
+.main-container {
+  display: flex;
+  width: 60%;
+  height: 500px;
+  margin: auto;
+  align-items: stretch;
+  box-shadow: 0px 30px 37px -10px #D7A696;
+}
+nav {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 20px;
+  font-family: 'Playfair Display', serif;
+  font-size: 12px;
+
+}
+.back-item-menu {
+  margin-right: auto;
+}
+.arrow-back-menu {
+  height: 15px;
+  width: 20px;
+  background-image: url('img/arrow-back.svg');
+  background-position: center center;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+li {
+  display: inline;
+}
+.back-item-menu {
+  display: inline;
+}
+.third-item-menu, .fourth-item-menu {
+  padding-left: 10px;
+}
+.fourth-item-menu {
+ padding-right: 20px;
+}
+.left-image {
+display: flex;
+width: 35%;
+height: inherit;
+background-image: url('img/background.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+
+}
+.right-side {
+  background: white;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 65%;
+  margin: auto;
+}
+.block-in-center {
+width: 80%;
+height: auto;
+margin-top: 110px;
+margin-bottom: auto;
+margin-left: auto;
+margin-right: auto;
+border-left: 0px;
+}
+
+H1 {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 4rem;
+  font-weight: normal;
+  padding: 0px;
+}
+H1::after {
+  content: '\2014';
+}
+H2 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 16px;
+    padding: 10px 0px;
+    font-weight: normal;
+}
+H2>span {
+  font-weight: bold;
+}
+.wrapper-for-preview-and-article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: stretch;
+}
+.left-side-in-wrapper {
+width: 40%;
+align-items: stretch;
+flex-direction: column;
+}
+.wrapper-for-preview {
+  width: 100%;
+  height: 100px;
+  background-image: url('img/preview.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 30px;
+  width: 30px;
+  transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+}
+.wrapper-all-photos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.all-photos {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+}
+.arrow-forward {
+  height: 10px;
+  width: 15px;
+  background-image: url('img/arrow-forward.svg');
+  background-position: center center;
+}
+article {
+  width: 50%;
+  flex-wrap: wrap;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+}
